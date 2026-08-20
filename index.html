@@ -1,88 +1,270 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hexafoil - Streamline Your Workflow</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Hexafoil supplies used OEM auto parts with clear condition notes, fitment details, and practical pricing.">
+  <meta name="theme-color" content="#101318">
+  <title>Hexafoil | Used OEM Auto Parts</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Header -->
-    <header>
-        <div class="container">
-            <div class="logo">Hexafoil</div>
-            <nav>
-                <ul>
-                    <li><a href="#features">Features</a></li>
-                    <li><a href="#pricing">Pricing</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <li><a href="#" class="btn">Get Started</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Hexafoil home">
+        <span class="brand-mark" aria-hidden="true">H</span>
+        <span class="brand-copy">
+          <strong>HEXAFOIL</strong>
+          <span>USED OEM AUTO PARTS</span>
+        </span>
+      </a>
 
-    <!-- Hero Section -->
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span></span><span></span><span></span>
+        <span class="sr-only">Toggle navigation</span>
+      </button>
+
+      <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+        <a href="#inventory">Inventory</a>
+        <a href="#why-oem">Why OEM</a>
+        <a href="#process">How We Sell</a>
+        <a href="#faq">FAQ</a>
+        <a class="nav-cta" href="#inventory">Find a Part</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
     <section class="hero">
-        <div class="container">
-            <h1>Streamline Your Workflow with Hexafoil</h1>
-            <p>Boost productivity and simplify your processes with Hexafoil's powerful automation tools.</p>
-            <a href="#" class="btn btn-primary">Try Hexafoil Free</a>
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">USED ORIGINAL EQUIPMENT</p>
+          <h1>Factory parts.<br><span>Second life.</span></h1>
+          <p class="hero-lede">Used OEM parts for drivers, DIYers, and repair shops who want original fit and function without paying new-dealer prices.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#inventory">Browse Parts</a>
+            <a class="button button-secondary" href="#why-oem">Why Used OEM?</a>
+          </div>
+          <div class="trust-row" aria-label="Buyer benefits">
+            <div><strong>OEM</strong><span>Original manufacturer parts</span></div>
+            <div><strong>Clear</strong><span>Photos &amp; condition notes</span></div>
+            <div><strong>Practical</strong><span>Used-part pricing</span></div>
+          </div>
         </div>
+
+        <div class="hero-panel" aria-label="Part identification guide">
+          <div class="panel-label">BUY THE RIGHT PART</div>
+          <h2>Match before you order.</h2>
+          <p>For the best fitment check, compare your original part number whenever possible.</p>
+          <ol class="fitment-steps">
+            <li><span>01</span><div><strong>Vehicle</strong><small>Year / make / model / trim</small></div></li>
+            <li><span>02</span><div><strong>Part number</strong><small>Match the OEM number on your original</small></div></li>
+            <li><span>03</span><div><strong>Photos</strong><small>Compare plugs, tabs, mounting points &amp; finish</small></div></li>
+          </ol>
+          <p class="panel-note">Used parts can vary by production date, engine, drivetrain, trim, and options—even within the same model year.</p>
+        </div>
+      </div>
     </section>
 
-    <!-- Features Section -->
-    <section id="features" class="features">
-        <div class="container">
-            <h2>Why Choose Hexafoil?</h2>
-            <div class="feature-grid">
-                <div class="feature-card">
-                    <h3>Automation</h3>
-                    <p>Automate repetitive tasks to save time and focus on what matters.</p>
-                </div>
-                <div class="feature-card">
-                    <h3>Integration</h3>
-                    <p>Seamlessly connect with your favorite tools and platforms.</p>
-                </div>
-                <div class="feature-card">
-                    <h3>Analytics</h3>
-                    <p>Gain insights with real-time data and performance tracking.</p>
-                </div>
-            </div>
-        </div>
+    <section class="ticker" aria-label="Popular part types">
+      <div class="ticker-track">
+        <span>MODULES</span><i></i><span>LIGHTING</span><i></i><span>INTERIOR</span><i></i><span>BODY PARTS</span><i></i><span>SWITCHES</span><i></i><span>ENGINE ACCESSORIES</span><i></i><span>TRIM</span><i></i><span>OEM HARDWARE</span>
+      </div>
     </section>
 
-    <!-- Call to Action -->
-    <section class="cta">
-        <div class="container">
-            <h2>Ready to Transform Your Workflow?</h2>
-            <p>Join thousands of teams using Hexafoil to work smarter, not harder.</p>
-            <a href="#" class="btn btn-primary">Get Started Now</a>
+    <section id="inventory" class="section inventory-section">
+      <div class="container">
+        <div class="section-heading split-heading">
+          <div>
+            <p class="eyebrow dark">WHAT WE SELL</p>
+            <h2>Useful parts from complete vehicles.</h2>
+          </div>
+          <p>Inventory changes constantly. We focus on reusable OEM components with enough value to justify careful removal, inspection, photography, and shipping.</p>
         </div>
+
+        <div class="category-grid">
+          <article class="category-card category-card-featured">
+            <div class="category-number">01</div>
+            <h3>Electronics &amp; Modules</h3>
+            <p>Control modules, switches, instrument clusters, radios, displays, sensors, cameras, and related electronics.</p>
+            <span class="category-tag">Part-number match recommended</span>
+          </article>
+          <article class="category-card">
+            <div class="category-number">02</div>
+            <h3>Lighting</h3>
+            <p>Headlights, tail lights, fog lights, marker lamps, housings, and factory lighting assemblies.</p>
+          </article>
+          <article class="category-card">
+            <div class="category-number">03</div>
+            <h3>Interior</h3>
+            <p>Consoles, trim panels, vents, handles, controls, mirrors, seat components, and hard-to-find factory pieces.</p>
+          </article>
+          <article class="category-card">
+            <div class="category-number">04</div>
+            <h3>Exterior &amp; Body</h3>
+            <p>Mirrors, grilles, trim, moldings, emblems, handles, brackets, and shippable body components.</p>
+          </article>
+          <article class="category-card">
+            <div class="category-number">05</div>
+            <h3>Mechanical</h3>
+            <p>Alternators, starters, throttle bodies, pumps, brackets, pulleys, accessories, and selected bolt-on components.</p>
+          </article>
+          <article class="category-card">
+            <div class="category-number">06</div>
+            <h3>OEM Hardware</h3>
+            <p>Factory bolts, fasteners, brackets, covers, mounts, and small pieces that are often discontinued or awkward to source new.</p>
+          </article>
+        </div>
+
+        <div class="inventory-note">
+          <div>
+            <strong>Looking for current stock?</strong>
+            <span>Individual listings will be linked here as inventory goes live.</span>
+          </div>
+          <a class="button button-dark" href="#fitment">Before You Buy</a>
+        </div>
+      </div>
     </section>
 
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-logo">Hexafoil</div>
-                <div class="footer-links">
-                    <a href="#features">Features</a>
-                    <a href="#pricing">Pricing</a>
-                    <a href="#about">About</a>
-                    <a href="#contact">Contact</a>
-                </div>
-                <div class="footer-social">
-                    <a href="#">Twitter</a>
-                    <a href="#">LinkedIn</a>
-                    <a href="#">GitHub</a>
-                </div>
-            </div>
-            <p>&copy; 2025 Hexafoil. All rights reserved.</p>
+    <section id="why-oem" class="section dark-section">
+      <div class="container why-grid">
+        <div class="why-copy">
+          <p class="eyebrow">WHY USED OEM</p>
+          <h2>Because “new” doesn’t always mean “better fit.”</h2>
+          <p>OEM parts were designed, tested, and manufactured for the vehicle they came from. For many repairs—especially trim, electronics, lighting, brackets, and interior pieces—a good used factory part can be the most direct replacement.</p>
         </div>
-    </footer>
+        <div class="compare-grid">
+          <div class="compare-card">
+            <span class="compare-kicker">USED OEM</span>
+            <h3>Original geometry</h3>
+            <p>Factory mounting points, connectors, finishes, and dimensions are already matched to the original application.</p>
+          </div>
+          <div class="compare-card">
+            <span class="compare-kicker">USED OEM</span>
+            <h3>Real factory materials</h3>
+            <p>Useful when aftermarket versions differ in texture, lens quality, switch feel, electronics, or small fitment details.</p>
+          </div>
+          <div class="compare-card">
+            <span class="compare-kicker">USED OEM</span>
+            <h3>More value from one vehicle</h3>
+            <p>Reusing serviceable components keeps good parts in circulation and gets more useful life from donor vehicles.</p>
+          </div>
+          <div class="compare-card accent-card">
+            <span class="compare-kicker">THE HEXAFOIL STANDARD</span>
+            <h3>Show the actual part</h3>
+            <p>Condition matters. Listings should make flaws visible and identify the exact piece being sold—not rely on generic stock photos.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <script src="script.js"></script>
+    <section id="process" class="section process-section">
+      <div class="container">
+        <div class="section-heading centered-heading">
+          <p class="eyebrow dark">HOW WE SELL</p>
+          <h2>Simple, transparent used parts.</h2>
+        </div>
+        <div class="process-line">
+          <article>
+            <span>1</span>
+            <h3>Identify</h3>
+            <p>We document the donor vehicle and part identifiers that help establish compatibility.</p>
+          </article>
+          <article>
+            <span>2</span>
+            <h3>Inspect</h3>
+            <p>Obvious damage, missing pieces, wear, or other relevant condition issues are called out.</p>
+          </article>
+          <article>
+            <span>3</span>
+            <h3>Photograph</h3>
+            <p>You see the actual part, including connectors, mounting points, labels, and cosmetic condition.</p>
+          </article>
+          <article>
+            <span>4</span>
+            <h3>Pack &amp; ship</h3>
+            <p>Shippable parts are packed with the shape, fragility, and weight of the component in mind.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="fitment" class="section fitment-section">
+      <div class="container fitment-grid">
+        <div>
+          <p class="eyebrow dark">FITMENT CHECK</p>
+          <h2>Same car. Different part.</h2>
+          <p class="fitment-intro">Automakers can change a component mid-year or use multiple suppliers for one model. Before ordering, verify more than the vehicle name.</p>
+        </div>
+        <div class="fitment-checklist">
+          <div><span>✓</span><p><strong>Match the OEM part number</strong> when the original part has a readable label or casting number.</p></div>
+          <div><span>✓</span><p><strong>Compare connectors and mounting tabs</strong> using the listing photos.</p></div>
+          <div><span>✓</span><p><strong>Check engine, drivetrain, trim, and options</strong> when those variables affect the component.</p></div>
+          <div><span>✓</span><p><strong>Use your VIN when appropriate</strong> to confirm the original equipment specification.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="section faq-section">
+      <div class="container faq-grid">
+        <div>
+          <p class="eyebrow dark">FAQ</p>
+          <h2>Used-part basics.</h2>
+        </div>
+        <div class="faq-list">
+          <details>
+            <summary>What does OEM mean?</summary>
+            <p>OEM means original equipment manufacturer. Here, it refers to factory-spec parts removed from vehicles rather than generic replacement parts made for the aftermarket.</p>
+          </details>
+          <details>
+            <summary>How do I know a part will fit?</summary>
+            <p>The safest starting point is an exact OEM part-number match, followed by a visual comparison of connectors, mounting points, and configuration. Vehicle year, make, and model alone may not be enough.</p>
+          </details>
+          <details>
+            <summary>Are used parts perfect?</summary>
+            <p>No. Used parts can have cosmetic wear, dirt, fading, scratches, corrosion, or other signs of service. The goal is to describe and photograph relevant condition clearly so you can make an informed purchase.</p>
+          </details>
+          <details>
+            <summary>Do you sell complete engines or transmissions?</summary>
+            <p>Inventory depends on the donor vehicle and what can be handled economically. The initial focus is on valuable shippable OEM components rather than promising every category.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="closing-cta">
+      <div class="container closing-inner">
+        <div>
+          <p class="eyebrow">HEXAFOIL AUTO PARTS</p>
+          <h2>Keep the factory part.<br>Skip the factory-new price.</h2>
+        </div>
+        <a class="button button-light" href="#inventory">See What We Sell</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="brand footer-brand">
+        <span class="brand-mark" aria-hidden="true">H</span>
+        <span class="brand-copy">
+          <strong>HEXAFOIL</strong>
+          <span>USED OEM AUTO PARTS</span>
+        </span>
+      </div>
+      <div class="footer-nav">
+        <a href="#inventory">Inventory</a>
+        <a href="#why-oem">Why OEM</a>
+        <a href="#fitment">Fitment</a>
+        <a href="#faq">FAQ</a>
+      </div>
+      <p>© <span id="year"></span> Hexafoil. Used OEM auto parts.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>

@@ -1,19 +1,19 @@
-// Smooth scrolling for navigation links
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-        });
-    });
-});
+const menuButton = document.querySelector('.menu-toggle');
+const nav = document.querySelector('.site-nav');
 
-// Basic interactivity (e.g., button hover effect)
-document.querySelectorAll('.btn').forEach(button => {
-    button.addEventListener('mouseover', () => {
-        button.style.opacity = '0.9';
+if (menuButton && nav) {
+  menuButton.addEventListener('click', () => {
+    const isOpen = nav.classList.toggle('open');
+    menuButton.setAttribute('aria-expanded', String(isOpen));
+  });
+
+  nav.querySelectorAll('a').forEach((link) => {
+    link.addEventListener('click', () => {
+      nav.classList.remove('open');
+      menuButton.setAttribute('aria-expanded', 'false');
     });
-    button.addEventListener('mouseout', () => {
-        button.style.opacity = '1';
-    });
-});
+  });
+}
+
+const year = document.getElementById('year');
+if (year) year.textContent = new Date().getFullYear();
